@@ -9,13 +9,15 @@ import com.demo.model.User;
 import com.demo.repository.UserRepository;
 
 @Service
+//@Slf4j
 public class RegisterService {
 
 	@Autowired
 	private UserRepository repository;
 
-	public void registerUser(User user) {
+	public void registerUser(User user) {   
 		repository.save(user);
+		//log.info("Successfully Saved");
 	}
 
 	public List<User> getUsers() {
