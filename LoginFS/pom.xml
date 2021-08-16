@@ -14,6 +14,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>LoginFS</name>
 	<description>Login User Microservice</description>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.commonfw</groupId>
