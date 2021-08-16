@@ -32,11 +32,6 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<dependency>
-				<groupId>com.commonfw</groupId>
-				<artifactId>common-core</artifactId>
-				<version>1.0.0</version>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
