@@ -13,24 +13,24 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>LoginFS</name>
 	<description>Login User Microservice</description>
-	
+
 	<dependencies>
-		
-		
 		<dependency>
 			<groupId>com.commonfw</groupId>
 			<artifactId>common-exception</artifactId>
-			<version>1.0.0</version>
+			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.commonfw</groupId>
 			<artifactId>common-core</artifactId>
-			<version>1.0.0</version>
+			<version>${project.parent.version}</version>
 		</dependency>
-
-		
+		<dependency>
+			<groupId>com.commonfw</groupId>
+			<artifactId>common-data</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
