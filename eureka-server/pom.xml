@@ -16,6 +16,19 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.commonfw</groupId>
+			<artifactId>common-cloud</artifactId>
+			<version>${project.parent.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>
+						spring-cloud-starter-netflix-hystrix
+					</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
