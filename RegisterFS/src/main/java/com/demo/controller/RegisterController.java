@@ -25,7 +25,7 @@ public class RegisterController {
 	@Autowired
 	private RegisterService service;
 
-	@RequestMapping(value="/registerUser",method = RequestMethod.POST)
+  @PostMapping("/registerUser")
 	public ResponseEntity<Object> save(@RequestHeader(value = "corelation-id", required = false) String cid,
 			@RequestBody User user) {
 		HttpHeaders headers = new HttpHeaders();
