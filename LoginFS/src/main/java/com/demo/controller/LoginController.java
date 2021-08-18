@@ -23,7 +23,7 @@ public class LoginController {
 
 	@PostMapping("/login")
 	public ResponseEntity<Object> login(@RequestHeader(value = "corelation-id", required = false) String cid,
-			@RequestBody User user) {
+			@RequestBody User user) throws Exception {
 		HttpHeaders headers = new HttpHeaders();
 		String corelid = StringUtils.hasText(cid) ? cid : UUID.randomUUID().toString();
 		headers.add("corelation-id", corelid);
