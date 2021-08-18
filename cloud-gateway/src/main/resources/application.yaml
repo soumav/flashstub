@@ -1,0 +1,52 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: LOGIN-SERVICE
+          uri: lb://login-fs
+          predicates:
+            - Path=/login-fs/**
+#          filters:
+#            - name: CircuitBreaker
+#              args:
+#                name: loginCircuitBreaker
+#                fallbackuri: forward:/loginServiceFallBack
+        - id: REGISTER-SERVICE
+          uri: lb://register-fs
+          predicates:
+            - Path=/register-fs/**
+#          filters:
+#            - name: CircuitBreaker
+#              args:
+#                name: registerCircuitBreaker
+#                fallbackuri: forward:/registerServiceFallBack
+                
+#resilience4j.circuitbreaker:
+#    configs:
+#        default:
+#            slidingWindowSize: 100
+#            permittedNumberOfCallsInHalfOpenState: 5
+#            waitDurationInOpenState: 10000
+#            failureRateThreshold: 60
+#            eventConsumerBufferSize: 10
+#            registerHealthIndicator: true
+#            record-exceptions:#             - java.lang.Exception
+#    instances:
+#       loginCircuitBreaker:
+#            baseConfig: default
+#            waitDurationInOpenState: 5000
+#       registerCircuitBreaker:
+#            baseConfig: default
+#            waitDurationInOpenState: 5000
+#
+#management:
+#  health:
+#    circuitbreakers:
+#      enabled: true
+#  endpoints:
+#    web:
+#      exposure:
+#        include: health
+#  endpoint:
+#    health:
+#      show-details: always

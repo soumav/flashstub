@@ -32,8 +32,8 @@ public class RegisterController {
 		String corelid = StringUtils.isAllBlank(cid) ? cid : UUID.randomUUID().toString();
 		headers.add("corelation-id", corelid);
 
-		service.registerUser(user);
-		return ResponseEntity.status(HttpStatus.OK).headers(headers).body("User Registered !!!");
+		String registerUserResponse = service.registerUser(user);
+		return ResponseEntity.status(HttpStatus.OK).headers(headers).body(registerUserResponse);
 	}
 
 	@GetMapping("/getAllUsers")
