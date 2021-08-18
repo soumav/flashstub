@@ -10,9 +10,10 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.demo.model.User;
@@ -24,8 +25,7 @@ public class RegisterController {
 	@Autowired
 	private RegisterService service;
 
-
-	@PostMapping("/registerUser")
+  @PostMapping("/registerUser")
 	public ResponseEntity<Object> save(@RequestHeader(value = "corelation-id", required = false) String cid,
 			@RequestBody User user) {
 		HttpHeaders headers = new HttpHeaders();
