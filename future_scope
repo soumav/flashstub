@@ -1,9 +1,14 @@
 Flash Stub Future Impls:
 -------------------------
 - Config server
+- Spring cloud gateway
 - Securing Eureka in Spring cloud
 - resilliance4j + add redis-rate-limiter (implement caching later on for resilliance4j)
 - hateos implementation
 - vault implementation for encryption
 - jwt + oauth
+- sleuth for distributed logging
 
+microservices:
+--------------
+cross-cutting design patterns 
