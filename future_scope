@@ -9,6 +9,7 @@ Flash Stub Future Impls:
 - JWT + OAuth
 - Sleuth for distributed logging
 - Kafka
+
 microservices:
 --------------
 cross-cutting design patterns 
