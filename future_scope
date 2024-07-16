@@ -3,7 +3,7 @@ Flash Stub Future Impls:
 - Resilliance4j + add redis-rate-limiter (implement caching later on for resilliance4j)
 - Hateos implementation
 - Vault/Hashicorp implementation for encryption
-- JWT (entitlement) + OAuth (and other spring security features as needed)
+- JWT (entitlements, etc.) + OAuth (and other spring security features as needed)
 - Kafka (add module for streaming)
 
 microservices:
