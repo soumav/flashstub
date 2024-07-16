@@ -12,6 +12,7 @@ microservices:
 - Config server
 - Spring cloud gateway
 - Securing Eureka in Spring cloud
+- Explore Rate limiter
 
 DevOps:
 -------
