@@ -6,8 +6,8 @@ Flash Stub Future Impls:
 - JWT (entitlements, etc.) + OAuth (and other spring security features as needed)
 - Kafka (add module for streaming)
 
-microservices:
---------------
+Microservice/architecture:
+--------------------------
 - implement cross-cutting design patterns 
 - Config server
 - Spring cloud gateway
@@ -18,13 +18,19 @@ DevOps:
 -------
 - create CI/CD pipeline (with jenkins docker and k8s/rancher)
 
+Testing:
+---------
+- Implement Karate
+- Test with JMeter
+
 Code quality:
 --------------
-implement sonar and fortify
+implement sonar and fortify in CI/CD pipeline
 
 logging/monitoring/metrics:
 ---------------------------
 - Sleuth for distributed logging
 - grafana/prometheus for metrics
-
 (explore appD, splunk, signalfx)
+
+
