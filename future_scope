@@ -31,6 +31,6 @@ logging/monitoring/metrics:
 ---------------------------
 - Sleuth for distributed logging
 - grafana/prometheus for metrics
-(explore appD, splunk, signalfx)
+(explore appD, splunk (creating alerts etc.), signalfx)
 
 
