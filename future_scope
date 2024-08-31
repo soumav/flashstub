@@ -30,7 +30,7 @@ implement sonar and fortify in CI/CD pipeline
 logging/monitoring/metrics:
 ---------------------------
 - Sleuth for distributed logging
-- grafana/prometheus for metrics
+- Open telemetry, grafana/prometheus for metrics
 (explore appD, splunk (creating alerts etc.), signalfx)
 
 
